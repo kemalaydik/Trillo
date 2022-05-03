@@ -1,0 +1,46 @@
+.user-nav {
+	display: inline-flex;
+	justify-content: space-between;
+	align-self: stretch;
+
+	& > * {
+		padding: 0 2rem;
+		display: flex;
+		align-items: center;
+	}
+	& > *:hover {
+		background-color: var(--gray-light-4);
+	}
+	&__icon {
+		fill: var(--gray-dark-3);
+	}
+	&__notification {
+		text-align: center;
+		line-height: 2rem;
+		background-color: var(--primary);
+		color: white;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 50%;
+		z-index: 1;
+		margin-left: -0.8rem;
+		margin-top: -3rem;
+	}
+	&__user {
+		display: inline-flex;
+		align-items: center;
+		gap: 1rem;
+	}
+	&__user-photo {
+		width: 4rem;
+		border-radius: 50%;
+		height: auto;
+	}
+
+	&__user-name {
+		color: var(--gray-dark-1);
+		text-transform: lowercase;
+		font-weight: 400;
+		padding-right: 3rem;
+	}
+}
