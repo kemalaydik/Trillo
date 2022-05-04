@@ -1,18 +1,31 @@
 * {
 	margin: 0;
 	padding: 0;
-	box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+	box-sizing: inherit;
 }
 
 html {
 	font-size: 62.5%;
-	@include respond(tab-land) {
+	box-sizing: border-box;
+	@include respond(lg) {
 		font-size: 56.25%; // 1 rem 9px  9/16
 	}
-	@include respond(tab-port) {
+	@include respond(md) {
 		font-size: 50%; //1 rem 8px  8/16
 	}
-	@include respond(wide) {
+	@include respond(xxlg) {
 		font-size: 75%; //1rem 12px 12/16
 	}
+}
+
+body {
+	background-image: linear-gradient(to right bottom, var(--primary-dark), var(--primary-light));
+	background-size: cover;
+	background-repeat: no-repeat;
+	min-height: 100vh;
 }

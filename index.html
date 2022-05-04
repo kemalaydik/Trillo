@@ -5,15 +5,256 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="shortcut icon" type="image/png" href="img/favicon.png">
     <title>trillo &mdash; Your all-in-one booking app</title>
 </head>
 
 <body>
+    <div class="container">
+        <header class="header">
+            <img src="img/logo.png" alt="trillo logo" class="logo">
+            <form class="search">
+                <input type="text" class="search__input" placeholder="Search hotels">
+                <button class="search__btn">
+                    <svg class="search__icon">
+                        <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+                    </svg>
+                </button>
+            </form>
+            <nav class="user-nav">
+                <div class="user-nav__icon-box">
+                    <svg class="icon user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                    </svg>
+                    <span class="user-nav__notification">7</span>
+                </div>
+                <div class="user-nav__icon-box">
+                    <svg class="icon user-nav__icon">
+                        <use xlink:href="img/sprite.svg#icon-chat"></use>
+                    </svg>
+                    <span class="user-nav__notification">13</span>
+                </div>
+                <div class="user-nav__user">
+                    <img src="img/user.jpg" alt="user photo" class="user-nav__user-photo">
+                    <span class="user-nav__user-name">Kemal</span>
+                </div>
+            </nav>
+        </header>
+        <div class=" content">
+            <aside class="sidebar">
+                <nav class="sidebar__nav">
+                    <ul class="sidebar__list">
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link sidebar__link--active">
+                                <svg class="icon sidebar__icon">
+                                    <use xlink:href="img/sprite.svg#icon-home"></use>
+                                </svg>
+                                <span class="sidebar__link-text">hotel</span>
+                            </a>
 
-    test
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <svg class="icon sidebar__icon">
+                                    <use xlink:href="img/sprite.svg#icon-aircraft-take-off"></use>
+                                </svg>
+                                <span class="sidebar__link-text">flight</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <svg class="icon sidebar__icon">
+                                    <use xlink:href="img/sprite.svg#icon-key"></use>
+                                </svg>
+                                <span class="sidebar__link-text">car rental</span>
+                            </a>
+
+                        </li>
+                        <li class="sidebar__item">
+                            <a href="#" class="sidebar__link">
+                                <svg class="icon sidebar__icon">
+                                    <use xlink:href="img/sprite.svg#icon-map"></use>
+                                </svg>
+                                <span class="sidebar__link-text">tours</span>
+                            </a>
+
+                        </li>
+                    </ul>
+
+                </nav>
+                <p class="sidebar__text">
+                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam, distinctio.
+                </p>
+            </aside>
+            <main class="hotel-view">
+                <div class="gallery">
+                    <figure>
+                        <img src="img/hotel-1.jpg" alt="hotel picture" class="gallery__img">
+                    </figure>
+                    <figure>
+                        <img src="img/hotel-2.jpg" alt="hotel picture" class="gallery__img">
+                    </figure>
+                    <figure>
+                        <img src="img/hotel-3.jpg" alt="hotel picture" class="gallery__img">
+                    </figure>
+
+                </div>
+                <div class="ribbon">
+                    <h1 class="ribbon__hotel-name">Sincer otel</h1>
+                    <div class="ribbon__score">
+                        <svg class="icon ribbon__star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="icon ribbon__star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="icon ribbon__star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="icon ribbon__star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                        <svg class="icon ribbon__star">
+                            <use xlink:href="img/sprite.svg#icon-star"></use>
+                        </svg>
+                    </div>
+                    <div class="ribbon__location">
+                        <svg class="icon ribbon__location-pin">
+                            <use xlink:href="img/sprite.svg#icon-location-pin"></use>
+                        </svg>
+                        <span class="ribbon__city">istanbul</span>
+                    </div>
+                    <div class="ribbon__rating">
+                        <span class="ribbon__rating-score">8.6</span>
+                        <span class="ribbon__rating-votes">429 votes</span>
+                    </div>
+                </div>
+                <div class="info">
+                    <div class="desc">
+                        <p class="desc__paragaph">
+                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam odio labore repudiandae
+                            porro excepturi reiciendis quidem possimus dolorum laudantium quae.
+                        </p>
+                        <p class="desc__paragaph">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum veritatis facilis
+                            nam, quasi voluptatum?
+                        </p>
+                        <hr class="desc__hr">
+                        <ul class="desc__list">
+                            <li class="desc__item">
+                                <svg class="icon desc__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <p class="desc__paragraph">Bedava wifi</p>
+                            </li>
+                            <li class="desc__item">
+                                <svg class="icon desc__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <p class="desc__paragraph">Hayvan dostu</p>
+                            </li>
+                            <li class="desc__item">
+                                <svg class="icon desc__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <p class="desc__paragraph">Denize yakın</p>
+                            </li>
+                            <li class="desc__item">
+                                <svg class="icon desc__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <p class="desc__paragraph">Kahvaltı dahil</p>
+                            </li>
+                            <li class="desc__item">
+                                <svg class="icon desc__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <p class="desc__paragraph">Aileye uygun</p>
+                            </li>
+                            <li class="desc__item">
+                                <svg class="icon desc__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <p class="desc__paragraph">Havuzlu</p>
+                            </li>
+                            <li class="desc__item">
+                                <svg class="icon desc__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <p class="desc__paragraph">Servis imkanlı</p>
+                            </li>
+                            <li class="desc__item">
+                                <svg class="icon desc__icon">
+                                    <use xlink:href="img/sprite.svg#icon-chevron-thin-right"></use>
+                                </svg>
+                                <p class="desc__paragraph">Klimalı odalar</p>
+                            </li>
+                        </ul>
+                        <hr class="desc__hr">
+                        <div class="desc__recomendation">
+                            <p class="desc__paragraph">Lorem ipsum dolor sit amet.</p>
+                            <div class="desc__img-box">
+                                <img src="img/user-2.jpg" alt="user photo" class="desc__img">
+                                <img src="img/user-3.jpg" alt="user photo" class="desc__img">
+                                <img src="img/user-4.jpg" alt="user photo" class="desc__img">
+                                <img src="img/user-5.jpg" alt="user photo" class="desc__img">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="user-reviews">
+                        <div class="review">
+                            <figure class="review__quote">
+                                <blockquote class="review__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Sunt, perferendis?
+                                </blockquote>
+                                <figcaption class="review__figcaption">
+                                    <img src="img/user-1.jpg" alt="" class="review__img">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Kemal Aydık</p>
+                                        <p class="review__date">27 Mart 2022</p>
+                                    </div>
+                                    <div class="review__rating">
+                                        8.6
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <div class="review">
+                            <figure class="review__quote">
+                                <blockquote class="review__text">Lorem ipsum dolor, sit amet consectetur adipisicing
+                                    elit. Sunt, perferendis?
+                                </blockquote>
+                                <figcaption class="review__figcaption">
+                                    <img src="img/user-6.jpg" alt="user photo" class="review__img">
+                                    <div class="review__user-box">
+                                        <p class="review__user-name">Kemal Aydık</p>
+                                        <p class="review__date">27 Mart 2022</p>
+                                    </div>
+                                    <div class="review__rating">
+                                        8.6
+                                    </div>
+                                </figcaption>
+                            </figure>
+                        </div>
+                        <a href="#" class="review__link">Show all &rarr;</a>
+
+                    </div>
+                </div>
+                <div class="cta">
+                    <h2 class="cta__text">4 Boş oda bulunmaktadır</h2>
+                    <button class="cta__btn">
+                        <span class="cta__span cta__span--1">Book now</span>
+                        <span class="cta__span cta__span--2"> 4 Rooms left</span>
+                    </button>
+                </div>
+            </main>
+        </div>
+    </div>
 
 </body>
 
