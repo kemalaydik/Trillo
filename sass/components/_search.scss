@@ -3,6 +3,10 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	@include respond(xxxsm) {
+		order: 1;
+		flex: 1 0 100%;
+	}
 
 	&__input {
 		padding: 0.7rem 2rem;
